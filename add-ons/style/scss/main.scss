@@ -1,0 +1,11 @@
+/* When using any of the scss add-ons make sure to add these lines to the main.scss file. */
+
+// RULES
+@import "rules/@mixins";
+@import "rules/@keyframes";
+
+// PAGE
+@import "page";
+
+// SIMPL
+@import "simpl";

@@ -1,0 +1,23 @@
+<style>
+    table {
+        width: 100%;
+        margin: 1rem;
+    }
+
+    h5 {
+        opacity: .8;
+    }
+</style>
+<table>
+    <tr>
+        <td>
+            <h2>Your account has been successfully created!</h2>
+            <br>
+            <h4>To proceed you have to activate your account.</h4>
+            <h4>Enter the following code on the page you've been redirected to.</h4><br>
+            <h3><?= UserController::getCode(1) ?></h3><br>
+            <h4>Or follow this link: </h4>
+            <h5>If you did not create this account you can ignore this mail and delete it.</h5>
+        </td>
+    </tr>
+</table>

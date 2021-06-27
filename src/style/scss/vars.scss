@@ -1,0 +1,33 @@
+// Config
+$img: '../../img/';
+$ico: '../../img/ico/';
+$svg: '../../img/svg/';
+
+// Colors
+$simpl: #E52D2D;
+
+/* Usefull @media breakpoints: */
+
+// Extra Small Screens
+$xsmall: 320px;
+
+// Small Screens
+$small: 481px;
+
+// Medium Screens
+$medium: 641px;
+
+// Large Screens
+$large: 961px;
+
+// Extra Large Screens
+$xlarge: 1025px;
+
+// Ultra Large Screens
+$xxlarge: 1281px;
+
+/*
+Note:
+- When using (min-width:), list from $xsmall -> $xxlarge.
+- When using (max-width:), list from $xxlarge -> $xsmall.
+*/

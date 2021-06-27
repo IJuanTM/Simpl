@@ -1,0 +1,51 @@
+// Quick example page structure.
+div.page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  div.page-header, div.page-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  div.page-header {
+    min-height: 50vh;
+  }
+
+  div.page-body {
+    min-height: 95vh;
+
+    div.page-group {
+      padding-bottom: 1rem;
+    }
+
+    div.page-head {
+      font-weight: 500;
+      font-size: 1.8rem;
+      letter-spacing: .05rem;
+      line-height: 2.2rem;
+    }
+
+    div.page-text {
+      font-size: 1rem;
+      line-height: 1.4rem;
+    }
+
+    div.page-details {
+      font-size: .8rem;
+      font-style: italic;
+      line-height: 1.6rem;
+    }
+
+    ul.page-list {
+      margin: 0 0 1rem;
+
+      > li {
+        font-size: .8rem;
+        display: list-item;
+      }
+    }
+  }
+}

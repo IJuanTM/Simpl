@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php?__uri=$1 [L,QSA,NC]
+
+ErrorDocument 403 /view/parts/errors/403.phtml
+ErrorDocument 404 /view/parts/errors/404.phtml
+ErrorDocument 500 /view/parts/errors/500.phtml

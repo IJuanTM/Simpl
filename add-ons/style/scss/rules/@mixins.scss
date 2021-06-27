@@ -1,0 +1,53 @@
+$browsers: "-webkit-", "-moz-", "-ms-", "-o-", "";
+
+// Mixins
+@mixin box-shadow($box-shadow1:null, $box-shadow2:null) {
+  @if ($box-shadow2 != null) {
+    -webkit-box-shadow: $box-shadow1, $box-shadow2;
+    -moz-box-shadow: $box-shadow1, $box-shadow2;
+    -o-box-shadow: $box-shadow1, $box-shadow2;
+    box-shadow: $box-shadow1, $box-shadow2;
+  } @else if ($box-shadow1 != null) {
+    -webkit-box-shadow: $box-shadow1;
+    -moz-box-shadow: $box-shadow1;
+    -o-box-shadow: $box-shadow1;
+    box-shadow: $box-shadow1;
+  }
+}
+
+@mixin transition($transition1:null, $transition2:null, $transition3:null, $transition4:null) {
+  @each $browser in $browsers {
+    #{$browser}transition: $transition1, $transition2, $transition3, $transition4;
+  }
+}
+
+// @inlcude animation($name $length $function $delay $count $direction);
+@mixin animation($animation) {
+  @each $browser in $browsers {
+    #{$browser}animation: $animation;
+  }
+}
+
+@mixin transform($transform1:null, $transform2:null, $transform3:null, $transform4:null) {
+  @each $browser in $browsers {
+    #{$browser}transform: $transform1 $transform2 $transform3 $transform4;
+  }
+}
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @-o-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}

@@ -1,0 +1,68 @@
+// Base CSS
+html, body {
+  margin: 0;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+
+  &:hover {
+    opacity: .8;
+  }
+}
+
+abbr:hover {
+  opacity: .8;
+  cursor: default;
+}
+
+*.text-prepend {
+  position: relative;
+  padding-left: .5rem;
+}
+
+*.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Flex widths
+*.f-90 {
+  flex: 0 1 90% !important;
+}
+
+*.f-80 {
+  flex: 0 1 80% !important;
+}
+
+*.f-70 {
+  flex: 0 1 70% !important;
+}
+
+*.f-60 {
+  flex: 0 1 60% !important;
+}
+
+*.f-50 {
+  flex: 0 1 50% !important;
+}
+
+*.f-40 {
+  flex: 0 1 40% !important;
+}
+
+*.f-30 {
+  flex: 0 1 30% !important;
+}
+
+*.f-20 {
+  flex: 0 1 20% !important;
+}
+
+*.f-10 {
+  flex: 0 1 10% !important;
+}

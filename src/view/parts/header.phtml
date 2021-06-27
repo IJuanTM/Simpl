@@ -1,0 +1,35 @@
+<!--
+This website is made using the Simpl framework made by: IJuanTM
+Simpl is listed under freeuse and can be applied to any website or project.
+If you want to use Simpl in your own project or read more about Simpl please visit the Simpl GitHub page: https://www.github.com/IJuanTM/simpl
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Define url-->
+    <script>window.app = {baseUrl: <?= json_encode($this->urlArr['baseUrl']); ?>};</script>
+
+    <!--Page Title-->
+    <title><?= PAGENAME ?></title>
+
+    <!--Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="<?= PageController::url('img/favicon/apple-touch-icon.png') ?>">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?= PageController::url('img/favicon/favicon-32x32.png') ?>">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= PageController::url('img/favicon/favicon-16x16.png') ?>">
+    <link rel="manifest" href="<?= PageController::url('img/favicon/site.webmanifest') ?>">
+    <link rel="mask-icon" href="<?= PageController::url('img/favicon/safari-pinned-tab.svg') ?>" color="#0265dd">
+    <!--For the favicons I recommend using https://realfavicongenerator.net/, this will give you all the icons for every browser.-->
+
+    <!--Meta and CSS-->
+    <?php
+    require_once META;
+    require_once CSS;
+    ?>
+</head>
+<body>
+<!--Navbar-->
+<?php $this->get_part('navbar'); ?>
+
+<!--Content-->
+<section class="content" id="content">
