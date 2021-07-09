@@ -81,7 +81,7 @@ class PageController extends PageModel
      * and long sting builder and lots of trims and preg functions.
      */
 
-    public static function url($sub_url = ''): string
+    public static function url(string $sub_url = ''): string
     {
         // Make a static variable $baseurl
         static $baseurl;

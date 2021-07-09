@@ -29,9 +29,9 @@ const ICO = IMG . 'ico/';
 const SVG = IMG . 'svg/';
 
 // Set needed index directories
-const META = PARTS . '/index/meta.phtml';
-const CSS = PARTS . '/index/css.phtml';
-const JS = PARTS . '/index/js.phtml';
+const META = PARTS . 'index/meta.phtml';
+const CSS = PARTS . 'index/css.phtml';
+const JS = PARTS . 'index/js.phtml';
 
 // Set the directories of the error pages
 const ERROR_403_PAGE = ERRORS . '403.phtml';
