@@ -4,9 +4,9 @@
 
 <div align="center">
 
-![Version](https://img.shields.io/badge/version-1.4.1-e52d2d)
-![PHP](https://img.shields.io/badge/php-8.0.7-787CB4?logo=php)
-![PHP](https://img.shields.io/badge/sass-1.34.1-CF649A?logo=sass)
+![Version](https://img.shields.io/badge/version-1.4.2-e52d2d)
+![PHP](https://img.shields.io/badge/php-8.0.8-787CB4?logo=php)
+![SASS](https://img.shields.io/badge/sass-1.34.1-CF649A?logo=sass)
 ![JQuery](https://img.shields.io/badge/jquery-3.6.0-0769AD?logo=jquery)
 
 </div>
@@ -113,6 +113,8 @@
                         -   Moved some code in the scss files and reformatted the files.
                         -   Updated SASS.
                         -   Removed main.css as this file is auto-generated via sass anyway.
+1.4.2 (10-Jul-2021)     -   Update to PHP 8.0.8
+                        -   Fixed some warnings that came from the new PHP version.
 ```
 
 ### **_Download latest version:_**
@@ -269,7 +271,7 @@ Clone: `git clone https://github.com/IJuanTM/Simpl`
 
 <div align="center">
 
-### And a big shout-out to [J. Malotaux](https://github.com/JEMX-mbou) for helping me with the initial version and setup!
+### A big shout-out to [J. Malotaux](https://github.com/JEMX-mbou) for helping me with the initial version and setup!
 
 </div>
 
