@@ -1,4 +1,4 @@
-// Some custom styled elements that I made.
+// Simpl Row/Column system
 *.--simpl-row, *.--simpl-col {
   flex: 1;
   display: flex;
@@ -12,6 +12,49 @@
   flex-direction: column;
 }
 
+// Custom Simpl styled page elements
+*.--simpl-page {
+  div.page-header {
+    min-height: 50vh;
+  }
+
+  div.page-body {
+    min-height: 95vh;
+
+    div.page-group {
+      padding-bottom: 1rem;
+    }
+
+    div.page-head {
+      font-weight: 500;
+      font-size: 1.8rem;
+      letter-spacing: .05rem;
+      line-height: 2.2rem;
+    }
+
+    div.page-text {
+      font-size: 1rem;
+      line-height: 1.4rem;
+    }
+
+    div.page-details {
+      font-size: .8rem;
+      font-style: italic;
+      line-height: 1.6rem;
+    }
+
+    ul.page-list {
+      margin: 0 0 1rem;
+
+      > li {
+        font-size: .8rem;
+        display: list-item;
+      }
+    }
+  }
+}
+
+// Custom Simple styled button
 *.--simpl-button {
   border: none;
   font-size: 1rem;
@@ -40,6 +83,7 @@
   }
 }
 
+// Custom Simpl styled table
 table.--simpl-table {
   display: flex;
   margin: .4rem 0 1rem;
@@ -87,6 +131,7 @@ table.--simpl-table {
   }
 }
 
+// Custom Simpl styled page card
 *.--simpl-card {
   display: flex;
   padding: 3rem;
@@ -123,13 +168,7 @@ table.--simpl-table {
   }
 }
 
-/*
-This form template is based-of Bootstrap but made simpler and smarter!
-It can be used to make fully modular forms without the need of columns and rows.
-If you want to use another front-end library you should delete this file.
- */
-
-// Form Styling
+// Custom Simpl styled form styling
 form.--simpl-form {
   > .--simpl-row {
     margin-bottom: 1rem;
@@ -308,7 +347,7 @@ form.--simpl-form {
   }
 }
 
-// Form Alerts
+// Custom Simpl styled form alerts
 div.--simpl-alert {
   font-size: 1rem;
   margin: 0 .5rem 1rem;

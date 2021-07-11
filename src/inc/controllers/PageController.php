@@ -61,7 +61,7 @@ class PageController extends PageModel
         $this->get_part('header');
 
         // Get the content of the BODY -> SECTION
-        if (file_exists(VIEW . $page . '.phtml')) require VIEW . $page . '.phtml';
+        if (file_exists(VIEW . $page . PHTML)) require VIEW . $page . PHTML;
         else {
             require_once ERROR_404_PAGE;
             header("Refresh: 2; url=" . PageController::url(REDIRECT) . "");
@@ -108,7 +108,7 @@ class PageController extends PageModel
     public function get_part($name)
     {
         // Load the part
-        $file = PARTS . $name . '.phtml';
+        $file = PARTS . $name . PHTML;
         if (file_exists($file)) require $file;
         else var_dump($file);
     }
@@ -116,7 +116,7 @@ class PageController extends PageModel
     public static function get_part_string($name): bool|string
     {
         // Get subpages
-        $file = PARTS . $name . '.phtml';
+        $file = PARTS . $name . PHTML;
         if (file_exists($file)) {
             ob_start();
             require $file;

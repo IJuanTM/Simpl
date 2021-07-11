@@ -55,7 +55,7 @@ class MailController
 
     public static function get_mail($name): bool|string
     {
-        return file_get_contents(MAILS . $name . '.phtml');
+        return file_get_contents(MAILS . $name . PHTML);
     }
 
     public static function userRegister_mail($receiver)
