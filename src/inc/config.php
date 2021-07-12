@@ -38,5 +38,5 @@ const ERROR_403_PAGE = ERRORS . '403.phtml';
 const ERROR_404_PAGE = ERRORS . '404.phtml';
 const ERROR_500_PAGE = ERRORS . '500.phtml';
 
-// Server information
-define('INFO', 'Server info: ' . apache_get_version());
+// Often used string as variables
+const PHTML = '.phtml';
